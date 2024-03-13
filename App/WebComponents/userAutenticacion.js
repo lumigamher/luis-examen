@@ -2,6 +2,7 @@ export class userAutenticacion extends HTMLElement {
     constructor() {
       super();
       this.render();
+      this.clicker();
     }
     render() {
       this.innerHTML = /* html */ `
@@ -30,6 +31,14 @@ export class userAutenticacion extends HTMLElement {
         </div>
     </div>
       `;
-    }}
+    }
+    clicker() {
+        const home = document.querySelector(".boxGrid");
+        home.addEventListener("click", () => {
+          const contenedorPrincipal = document.querySelector('main');
+          contenedorPrincipal.innerHTML = '<cotizar-site></cotizar-site>';
+        });
+      }
+    }
   
     customElements.define('user-autenticacion', userAutenticacion);

@@ -30,7 +30,7 @@ export class nivelDeCalidad extends HTMLElement {
       `;
     }
     clicker() {
-        const home = document.querySelector(".containerImage1");
+        const home = document.querySelector(".boxGrid");
         home.addEventListener("click", () => {
             console.log("|uyhnjkm");
           const contenedorPrincipal = document.querySelector('main');

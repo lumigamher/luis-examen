@@ -69,7 +69,8 @@ body{
 }
 .tcolor1{
     color: #1dfcfd;
-    font-size: 8rem;
+    font-size: clamp(1rem, 15vw, 8rem);
+
 }
 
 .boton{

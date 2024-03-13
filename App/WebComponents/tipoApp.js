@@ -1,8 +1,9 @@
-
+import "./diseñoApp.js";
 export class tipoApp extends HTMLElement {
     constructor() {
       super();
       this.render();
+      this.clicker();
     }
     render() {
       this.innerHTML = /* html */ `
@@ -31,6 +32,14 @@ export class tipoApp extends HTMLElement {
         </div>
     </div>
       `;
-    }}
-  
+    }
+    clicker() {
+        const home = document.querySelector(".boxGrid");
+        home.addEventListener("click", () => {
+          const contenedorPrincipal = document.querySelector('main');
+          contenedorPrincipal.innerHTML = '<diseno-app></diseno-app>';
+        });
+      }
+}
+    
     customElements.define('tipo-app', tipoApp);

@@ -1,8 +1,9 @@
-
+import "./userAutenticacion.js";
 export class monetizarApp extends HTMLElement {
     constructor() {
       super();
       this.render();
+      this.clicker();
     }
     render() {
       this.innerHTML = /* html */ `
@@ -31,6 +32,12 @@ export class monetizarApp extends HTMLElement {
         </div>
     </div>
       `;
-    }}
-  
+    }
+    clicker() {
+        const home = document.querySelector(".boxGrid");
+        home.addEventListener("click", () => {
+          const contenedorPrincipal = document.querySelector('main');
+          contenedorPrincipal.innerHTML = '<user-autenticacion></user-autenticacion>';
+        });
+      }}
     customElements.define('monetizar-app', monetizarApp);
