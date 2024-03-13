@@ -1,5 +1,5 @@
 
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 *{
     padding: 0;
     margin: 0;
@@ -17,7 +17,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     height: 100vh;
 }
 
@@ -33,6 +33,7 @@ body{
     align-items: center;
     padding: 1rem 0;
     transition: 300ms;
+    cursor: pointer;
 }
 
 .containerImage1:hover{
@@ -49,7 +50,9 @@ body{
 .img{
     width: 40%;
 }
-
+.imgHome{
+    width: 100%;
+}
 .title{
     text-align: center;
     width: 65vw;
@@ -68,20 +71,44 @@ body{
 .boton{
     background: rgb(29,252,253);
     background: linear-gradient(90deg, rgba(29,252,253,1) 0%, rgba(58,60,180,1) 100%);
-    border: 0;
     border-radius: .2rem;
     color: white;
-    width: 10rem;
-    height: 3rem;
+    width: 14rem;
+    height: 4rem;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
+    overflow:hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition:all .2s ease-in-out;
+    position: relative;
+}
+
+.boton:before{
+    content:" ";
+    display:block;
+    width:200px;
+    height:80px;
+    background:rgba(255, 255, 255, .4);
+    position:absolute;
+    top:-10px;
+    left:-200px;
+    transform:rotate(-45deg);
+    transition:all .2s ease-in-out;  
+}
+  
+.boton:hover:before{
+    margin-left:300%;
+}
+
+.boton:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .description{
     font-size: clamp(.3rem, 2.5vw, .9rem);
     text-align: center;
 }
-.nivelDeCalidad{
+.container{
     text-align: center;
     display: flex;
     flex-direction: column;

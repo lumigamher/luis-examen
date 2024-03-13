@@ -8,7 +8,7 @@ export class homeSite extends HTMLElement {
     this.innerHTML = /* html */ `
     <div class="home" id="home">
         <div class="containerImage">
-            <img class="img" src="Source/answer-1-1.png" alt="imagen">
+            <img class="imgHome" src="Source/answer-1-1.png" alt="imagen">
         </div>
         <div class="title">
             <span><strong>¿Cuanto cuesta desarrollar mi </strong></span><span class="tcolor"><strong>app GBP?</strong></span>
