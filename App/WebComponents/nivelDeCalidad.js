@@ -1,8 +1,9 @@
-
+import "./tipoApp.js";
 export class nivelDeCalidad extends HTMLElement {
     constructor() {
       super();
       this.render();
+      this.clicker();
     }
     render() {
       this.innerHTML = /* html */ `
@@ -27,6 +28,14 @@ export class nivelDeCalidad extends HTMLElement {
         </div>
     </div>
       `;
-    }}
+    }
+    clicker() {
+        const home = document.querySelector(".containerImage1");
+        home.addEventListener("click", () => {
+            console.log("|uyhnjkm");
+          const contenedorPrincipal = document.querySelector('main');
+          contenedorPrincipal.innerHTML = '<tipo-app></tipo-app>';
+        });
+      }}
   
     customElements.define('nivel-calidad', nivelDeCalidad);

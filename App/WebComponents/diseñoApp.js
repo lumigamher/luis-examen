@@ -1,5 +1,5 @@
 
-export class monetizarApp extends HTMLElement {
+export class disenoApp extends HTMLElement {
     constructor() {
       super();
       this.render();
@@ -33,4 +33,4 @@ export class monetizarApp extends HTMLElement {
       `;
     }}
   
-    customElements.define('monetizar-app', monetizarApp);
+    customElements.define('diseno-app', disenoApp);

@@ -1,3 +1,4 @@
+import './nivelDeCalidad.js';
 export class homeSite extends HTMLElement {
   constructor() {
     super();
@@ -24,9 +25,7 @@ export class homeSite extends HTMLElement {
     const home = document.querySelector(".boton");
     home.addEventListener("click", () => {
       const contenedorPrincipal = document.querySelector('main');
-      const nivelCalidadComponente = document.createElement('nivel-calidad');
-      contenedorPrincipal.innerHTML = '';
-      contenedorPrincipal.appendChild(nivelCalidadComponente);
+      contenedorPrincipal.innerHTML = '<nivel-calidad></nivel-calidad>';
     });
   }}
   customElements.define('home-element', homeSite);

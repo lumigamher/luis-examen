@@ -1,4 +1,3 @@
-monetizarApp
 export class userAutenticacion extends HTMLElement {
     constructor() {
       super();
