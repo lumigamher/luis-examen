@@ -7,3 +7,4 @@ import '../App/WebComponents/userAutenticacion.js'
 import '../App/WebComponents/cotizacion.js'
 
 
+const contenedorPrincipal = document.getElementById('main');

@@ -1,8 +1,8 @@
-
 export class homeSite extends HTMLElement {
   constructor() {
     super();
     this.render();
+    this.clicker();
   }
   render() {
     this.innerHTML = /* html */ `
@@ -19,6 +19,15 @@ export class homeSite extends HTMLElement {
         </div>
     </div>
     `;
+  }
+  clicker() {
+    const home = document.querySelector(".boton");
+    home.addEventListener("click", () => {
+      const contenedorPrincipal = document.querySelector('main');
+      const nivelCalidadComponente = document.createElement('nivel-calidad');
+      contenedorPrincipal.innerHTML = '';
+      contenedorPrincipal.appendChild(nivelCalidadComponente);
+    });
   }}
-
   customElements.define('home-element', homeSite);
+
