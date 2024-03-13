@@ -1,0 +1,106 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(61, 59, 59);
+    color: white;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+}
+
+
+.containerImage{
+    width: 15rem;
+}
+.containerImage1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    transition: 300ms;
+}
+
+.containerImage1:hover{
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: .2rem;
+    transform: translateY(-.5rem);
+}
+
+.containerImage1:active{
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: .2rem;
+    border: solid 1px white;
+}
+.img{
+    width: 40%;
+}
+
+.title{
+    text-align: center;
+    width: 65vw;
+    font-size: clamp(1rem, 3.5vw, 5rem);
+}
+.title2{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: clamp(1rem, 3.5vw, 2rem);
+}
+.tcolor{
+    color: #1dfcfd;
+}
+
+.boton{
+    background: rgb(29,252,253);
+    background: linear-gradient(90deg, rgba(29,252,253,1) 0%, rgba(58,60,180,1) 100%);
+    border: 0;
+    border-radius: .2rem;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.description{
+    font-size: clamp(.3rem, 2.5vw, .9rem);
+    text-align: center;
+}
+.nivelDeCalidad{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    gap: 2rem;
+}
+
+.boxGrid{
+    width: 90%;
+    display: grid;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    gap: 1rem;
+    margin-trim: 5rem;
+}
