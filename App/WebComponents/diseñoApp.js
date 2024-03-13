@@ -1,5 +1,5 @@
 
-export class diseñoApp extends HTMLElement {
+export class monetizarApp extends HTMLElement {
     constructor() {
       super();
       this.render();
@@ -8,24 +8,24 @@ export class diseñoApp extends HTMLElement {
       this.innerHTML = /* html */ `
       <div class="container" id="diseñoApp">
         <div class="title2">
-            <span><strong>¿Que diseño desea que tenga la app?</strong></span>
+            <span><strong>¿Como monetizar con tu app?</strong></span>
         </div>
         <div class="boxGrid">
             <div class="containerImage1">
-                <img class="img" src="Source/answer-3-1.png" alt="imagen">
-                <span class="descripttion">Interfaz sencilla</span>
+                <img class="img" src="Source/answer-4-1.png" alt="imagen">
+                <span class="descripttion">Aplicacion gratuita con publicidad</span>
             </div>
             <div class="containerImage1">
-                <img class="img" src="Source/answer-3-2.png" alt="imagen">
-                <span class="descripttion">Interfaz ersonalizada</span>
+                <img class="img" src="Source/answer-4-2.png" alt="imagen">
+                <span class="descripttion">Aplicacion de pago</span>
             </div>
             <div class="containerImage1">
-                <img class="img" src="Source/answer-3-3.png" alt="imagen">
-                <span class="descripttion">Interfaz replicada de la web</span>
+                <img class="img" src="Source/answer-4-3.png" alt="imagen">
+                <span class="descripttion">Compras dentro de la app</span>
             </div>
             <div class="containerImage1">
-                <img class="img" src="Source/answer-3-4.png" alt="imagen">
-                <span class="descripttion">No nesecito diseño</span>
+                <img class="img" src="Source/answer-4-4.png" alt="imagen">
+                <span class="descripttion">Otros/No lo se todavia</span>
             </div>
             </div>
         </div>
@@ -33,4 +33,4 @@ export class diseñoApp extends HTMLElement {
       `;
     }}
   
-    customElements.define('diseno-app', diseñoApp);
+    customElements.define('monetizar-app', monetizarApp);

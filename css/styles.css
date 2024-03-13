@@ -67,6 +67,10 @@ body{
 .tcolor{
     color: #1dfcfd;
 }
+.tcolor1{
+    color: #1dfcfd;
+    font-size: 8rem;
+}
 
 .boton{
     background: rgb(29,252,253);
@@ -130,4 +134,58 @@ body{
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     gap: 1rem;
     margin-trim: 5rem;
+}
+
+.faceboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33539b;
+    width: 4.5rem;
+    height: 1.5rem;
+    gap: .3rem;
+    border-radius: .2rem;
+    border: 0;
+    color: white;
+}
+.tboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c8cd6;
+    width: 4.5rem;
+    height: 1.5rem;
+    gap: .3rem;
+    border-radius: .2rem;
+    border: 0;
+    color: white;
+}
+.inboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a3086;
+    width: 4.5rem;
+    height: 1.5rem;
+    gap: .3rem;
+    border-radius: .2rem;
+    border: 0;
+    color: white;
+}
+.gboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e42424;
+    width: 5.5rem;
+    height: 1.5rem;
+    gap: .3rem;
+    border-radius: .2rem;
+    border: 0;
+    color: white;
+}
+
+.botones{
+    display: flex;
+    gap: 1rem;
 }
